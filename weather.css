@@ -1,0 +1,107 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1E3C72, #2A5298); /* Default Background */
+    color: white;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+/* Input & Button Styling */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-box button {
+    padding: 8px 15px;
+    border: none;
+    background: #FF6B6B;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #FF4757;
+}
+
+/* Weather Info */
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.temp {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Background Change Icon */
+#bg-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#bg-toggle:hover {
+    transform: rotate(180deg);
+}

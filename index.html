@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Now</h1>
+        <p>Get real-time weather updates for any city in the world.</p>
+
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <img src="/img/weather.webp" class="weather-icon" id="weather-icon" alt="Weather Icon">
+            <h2 id="city-name">City Name</h2>
+            <p class="temp" id="temperature">--°C</p>
+            <p class="details" id="weather-condition">Condition: --</p>
+            <p class="details" id="humidity">Humidity: --%</p>
+        </div>
+
+        <!-- bg change-color  -->
+         <!-- <div id="bg-toggle">bg change</div> -->
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
