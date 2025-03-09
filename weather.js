@@ -6,7 +6,7 @@ const Temperature = document.getElementById('temperature');
 const Condition = document.getElementById('weather-condition');
 const Humidity = document.getElementById('humidity');
 
-let Api_Key = "ce5db4b45eb79f0fdce9cb5a696a3b1b";
+
 
 const getWeather = async (city) => {
     try {
